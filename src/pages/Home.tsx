@@ -67,7 +67,7 @@ const Home = () => {
           options={continentsList}
           placeholder="Select an continent"
           onChange={handleContinent}
-          defaultInputValue={continentsList.find(
+          defaultValue={continentsList.find(
             (el: any) => el.value === continent
           )}
           className="m-2  w-1/5 h-10"

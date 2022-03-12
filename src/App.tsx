@@ -8,7 +8,10 @@ import Home from "./pages/Home";
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div className=" w-full flex justify-center pt-5 dark:bg-slate-400 min-h-screen">
+      <div
+        className=" w-full flex justify-center pt-5 dark:bg-slate-400 min-h-screen"
+        style={{ fontFamily: "roboto" }}
+      >
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />

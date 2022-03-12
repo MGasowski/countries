@@ -25,7 +25,7 @@ const GET_COUNTRY = (code: string | undefined) => gql`
   }
 `;
 
-const Country = (props: any) => {
+const Country = (): JSX.Element => {
   const { code } = useParams();
   const { data, loading, error } = useQuery(GET_COUNTRY(code));
 
@@ -38,7 +38,7 @@ const Country = (props: any) => {
         className="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20 border h-min"
         style={{ minWidth: 400 }}
       >
-        <div className="text-2xl p-2 -ml-8 -mt-4 w-min">
+        <div className="text-2xl p-2 -ml-8 -mt-4 w-min hover:text-blue-400">
           <Link to="/">
             <AiOutlineArrowLeft />
           </Link>

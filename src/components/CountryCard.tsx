@@ -14,7 +14,7 @@ const CountryCard = (props: Props): JSX.Element => {
           <span className="mx-2">{props.emoji} </span>
           <span className="mx-2">{props.code} </span>
         </div>
-        <p className="h1">{props.name}</p>
+        <p className="h1 ">{props.name}</p>
         <span></span>
       </div>
     </Link>
